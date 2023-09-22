@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 
+st.set_page_config(layout='wide')
+
 df = pd.read_csv('data.csv', sep=',')
 
 st.title('The Best Company')

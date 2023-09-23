@@ -13,7 +13,7 @@ with st.form(key="email_form"):
     option_list = st.selectbox('Please select a topic:', df['topic'])
     message = st.text_area('Your message')
     message_email = f"""
-        Topic:{option_list}\n{message}\n{user_email}
+    Topic:{option_list}\n{message}\n{user_email}
         """
         
     button = st.form_submit_button()

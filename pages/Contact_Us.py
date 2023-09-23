@@ -9,12 +9,11 @@ df = pd.read_csv('topics.csv')
 
 with st.form(key="email_form"):
     user_email = st.text_input('Your email address')
-    message_subject = st.text_input('Subject of your message')
-    option_list = st.selectbox('Please select a topic:', df['topic'])
+    message_subject = st.selectbox('Please select a topic:', df['topic'])
     message = st.text_area('Your message')
     message_email = f"""
-    Topic:{option_list}\n{message}\n{user_email}
-    """
+        {message}\n{user_email}
+        """
         
     button = st.form_submit_button()
     if button:

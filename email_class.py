@@ -24,12 +24,3 @@ class Gmail():
             server.login(self.username, self.password)
             server.send_message(msg)
             print('email sent')
-
-
-# if __name__!='main':
-#     message_subject = 'test2'
-#     message = """
-#     Hi!,
-#     how are you"""
-
-#     Gmail('neonrobot9@gmail.com', 'pash ggce smtl hxzi ').send_email(message_subject, message)
